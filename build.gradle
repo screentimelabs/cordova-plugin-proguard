@@ -6,7 +6,9 @@ android {
     }
     release {
       minifyEnabled true
+      shrinkResources true
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'src/main/assets/www/proguard-custom.txt'
+      zipAlignEnabled true
     }
   }
 }
